@@ -1,0 +1,678 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+		<link href="https://fonts.googleapis.com/css?family=Mr+Dafoe" rel="stylesheet" type="text/css">
+
+		<style type="text/css">
+			html,body{font-family:"Open Sans",Arial,sans-serif;font-size:14px;font-weight:400;background:#f3f3f3 url(https://pds.exblog.jp/pds/1/201608/01/38/a0354838_16540881.jpg
+) no-repeat center center fixed;background-size:cover;height:100%}#title{font-family:"Mr Dafoe",Times,serif;font-size:34px;background:rgba(255,255,255,.8);margin-bottom:34px}.header{padding-bottom:13px;margin-bottom:13px;border-bottom:1px solid #eee}a{color:#26ADE4;text-decoration:none}#title a{color:#333;margin-left:21px}#title a:hover{text-decoration:none;color:#26ADE4}.sidebar ul{margin:0;padding:0}.sidebar ul li{list-style:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0 13px 0;padding:13px}.navi a{margin:5px 2px;font-size:95%}.main{margin-top: 6rem;}.form-inline .form-control{min-width: 300px;}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}.main{margin-top: 6rem;}.form-inline .form-control{min-width: 300px;}			
+		</style>
+
+		<title>クールノー均衡 費用関数と利得関数が違う</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "James"
+  },
+  "headline": "クールノー均衡 費用関数と利得関数が違う",
+  "datePublished": "2021-04-24",
+  "image": [https://keiei-manabu.com/cms/wp-content/themes/keiei-manabu/img/%E3%82%AF%E3%83%BC%E3%83%AB%E3%83%8E%E3%83%BC%E7%AB%B6%E4%BA%893.jpg,SeuGGPDtIM0e0M,https://wiis.info/wp-content/uploads/2019/10/cournot-03-300x274.png],
+  "publisher": {
+    "@type": "Organization",
+    "name": "Blog",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=クールノー均衡 費用関数と利得関数が違う",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+		<!-- Head tag Code -->	</head>
+	<body>
+		<header class="bg-white fixed-top">			
+			<nav class="navbar navbar-light bg-white mb-0">
+				<div class="container justify-content-center justify-content-sm-between">	
+				  <a href="/" title="Blog" class="navbar-brand mb-1">Blog</a>
+				  				</div>			  
+			</nav>				
+		</header>
+		<main class="main container bg-white">
+			<div class="col-md-12 my-4" align="center">
+				<div class="d-block p-4">
+	<br/><center>
+<script type="text/javascript">
+	atOptions = {
+		'key' : 'd232bd6e1c0d85f8dc8c8119bc5f5a1e',
+		'format' : 'iframe',
+		'height' : 250,
+		'width' : 300,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://magnificentmanlyyeast.com/d232bd6e1c0d85f8dc8c8119bc5f5a1e/invoke.js"></scr' + 'ipt>');
+</script></center><br/>
+</div>			</div>
+			<div class="row header">
+				<div class="col-sm-12 text-center p-2">
+						<h1>クールノー均衡 費用関数と利得関数が違う</h1>
+
+	
+	<div class="navi text-center">
+										<a class="badge badge-success" href="/%E3%82%A2%E3%83%9E%E3%82%BE%E3%83%B3-%E5%BA%83%E5%91%8A-%E8%B2%BB%E7%94%A8-%E8%BF%BD%E5%8A%A0-%E5%8F%8D%E6%98%A0.html">アマゾン 広告 費用 追加 反映</a>
+											<a class="badge badge-danger" href="/google-%E3%82%B5%E3%83%BC%E3%83%90%E9%81%8B%E7%94%A8%E8%B2%BB%E7%94%A8.html">google サーバ運用費用</a>
+											<a class="badge badge-warning" href="/%E3%83%87%E3%82%A4%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9-%E8%B2%BB%E7%94%A8%EF%BC%99%E6%99%82%E9%96%93%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9.html">デイサービス 費用９時間サービス</a>
+											<a class="badge badge-danger" href="/%E3%83%90%E3%83%B3%E3%83%91%E3%83%BC-%E4%BF%AE%E7%90%86-%E8%B2%BB%E7%94%A8-%E3%83%B4%E3%82%A7%E3%83%AB%E3%83%95%E3%82%A1%E3%82%A4%E3%82%A2.html">バンパー 修理 費用 ヴェルファイア</a>
+											<a class="badge badge-primary" href="/softbank%E5%85%89-%E5%88%9D%E6%9C%9F%E8%B2%BB%E7%94%A8-3800.html">softbank光 初期費用 3800</a>
+											<a class="badge badge-dark" href="/%E3%82%A2%E3%83%B3%E3%83%86%E3%83%8A%E7%AB%AF%E5%AD%90-%E8%BF%BD%E5%8A%A0%E5%B7%A5%E4%BA%8B-%E8%B2%BB%E7%94%A8.html">アンテナ端子 追加工事 費用</a>
+											<a class="badge badge-light" href="/web-%E3%83%87%E3%83%BC%E3%82%BF%E3%83%99%E3%83%BC%E3%82%B9-%E4%BD%9C%E6%88%90-%E8%B2%BB%E7%94%A8.html">web データベース 作成 費用</a>
+											<a class="badge badge-primary" href="/%E3%83%91%E3%82%A4%E3%82%AA%E3%83%8B%E3%82%A2-pdp-%E3%83%AA%E3%82%B5%E3%82%A4%E3%82%AF%E3%83%AB%E8%B2%BB%E7%94%A8.html">パイオニア pdp リサイクル費用</a>
+											<a class="badge badge-info" href="/%E3%83%90%E3%82%A4%E3%82%AF%E3%81%AE%E5%85%8D%E8%A8%B1-%E3%81%B2%E3%82%89%E3%81%B0%E3%82%8A-%E8%B2%BB%E7%94%A8.html">バイクの免許 ひらばり 費用</a>
+											<a class="badge badge-danger" href="/%E3%82%B5%E3%82%A4%E3%83%88%E8%B2%BB%E7%94%A8%E3%81%AE%E6%A7%8B%E9%80%A0.html">サイト費用の構造</a>
+											<a class="badge badge-warning" href="/%E3%82%A8%E3%82%A2%E3%82%B3%E3%83%B3-%E4%B8%80%E5%8F%B0-%E5%8F%96%E3%82%8A%E4%BB%98%E3%81%91%E8%BE%BC%E3%81%BF%E8%B2%BB%E7%94%A8.html">エアコン 一台 取り付け込み費用</a>
+											<a class="badge badge-success" href="/%E3%82%AA%E3%83%BC%E3%83%88%E3%82%A2%E3%83%BC%E3%83%AB%E3%82%BA-%E3%83%90%E3%83%83%E3%83%86%E3%83%AA%E3%83%BC-%E5%87%A6%E5%88%86%E8%B2%BB%E7%94%A8.html">オートアールズ バッテリー 処分費用</a>
+											<a class="badge badge-secondary" href="/jpnic%E3%83%8F%E3%83%B3%E3%83%89%E3%83%AB-%E5%8F%96%E5%BE%97-%E8%B2%BB%E7%94%A8.html">jpnicハンドル 取得 費用</a>
+											<a class="badge badge-warning" href="/eta-%E3%82%AA%E3%83%BC%E3%82%B9%E3%83%88%E3%83%A9%E3%83%AA%E3%82%A2-%E7%94%B3%E8%AB%8B%E8%B2%BB%E7%94%A8.html">eta オーストラリア 申請費用</a>
+											<a class="badge badge-light" href="/%E3%82%A2%E3%83%91%E3%83%BC%E3%83%88-%E5%88%9D%E6%9C%9F%E8%B2%BB%E7%94%A8-%E8%A8%BC%E6%98%8E%E6%9B%B8.html">アパート 初期費用 証明書</a>
+						</div>
+<center>
+	<script type="text/javascript">
+	atOptions = {
+		'key' : 'a7e6ae4bcf1c49afa3b184d0c694ad6c',
+		'format' : 'iframe',
+		'height' : 50,
+		'width' : 320,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://magnificentmanlyyeast.com/a7e6ae4bcf1c49afa3b184d0c694ad6c/invoke.js"></scr' + 'ipt>');
+</script>
+		
+	</center>
+					
+				</div>
+			</div>
+			<div class="row content mb-4">
+				<div class="col-md-12">					
+					
+	
+	<div class="card-columns">
+						
+	  <div class='card'>
+	  	<a href="https://slidesplayer.net/slide/11508399/62/images/19/%E7%AC%AC11%E7%AB%A0+%E5%AF%A1%E5%8D%A0+11.4+%E3%82%AF%E3%83%BC%E3%83%AB%E3%83%8E%E3%83%BC%E5%9D%87%E8%A1%A1+%E2%96%A0%E3%82%AF%E3%83%BC%E3%83%AB%E3%83%8E%E3%83%BC%E3%83%A2%E3%83%87%E3%83%AB%EF%BC%88%E8%A4%87%E5%8D%A0duopoly%E3%81%AE%E5%A0%B4%E5%90%88%EF%BC%89+%E6%95%B0%E5%80%A4%E4%BE%8B%EF%BC%9A+%E9%80%86%E9%9C%80%E8%A6%81%E9%96%A2%E6%95%B0%EF%BC%9A+p%EF%BC%9Da%EF%BC%8D%28y1%EF%BC%8By2%29.jpg" data-lightbox="roadtrip" data-title="第11章 寡占 市場の分類 完全競争 独占的競争 供給 独占 供給 複占 供給 寡占 双方独占 買い手独占 需要独占 Ppt Download">
+						<img class="card-img" src="https://slidesplayer.net/slide/11508399/62/images/19/%E7%AC%AC11%E7%AB%A0+%E5%AF%A1%E5%8D%A0+11.4+%E3%82%AF%E3%83%BC%E3%83%AB%E3%83%8E%E3%83%BC%E5%9D%87%E8%A1%A1+%E2%96%A0%E3%82%AF%E3%83%BC%E3%83%AB%E3%83%8E%E3%83%BC%E3%83%A2%E3%83%87%E3%83%AB%EF%BC%88%E8%A4%87%E5%8D%A0duopoly%E3%81%AE%E5%A0%B4%E5%90%88%EF%BC%89+%E6%95%B0%E5%80%A4%E4%BE%8B%EF%BC%9A+%E9%80%86%E9%9C%80%E8%A6%81%E9%96%A2%E6%95%B0%EF%BC%9A+p%EF%BC%9Da%EF%BC%8D%28y1%EF%BC%8By2%29.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTp0nJNhFA6SsnPfDjfo2tGB3Yk_C6CBVEnonBJpiFqX945ielx3dSQVc4I2WeJHWd_NRQ';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				第11章 寡占 市場の分類 完全競争 独占的競争 供給 独占 供給 複占 供給 寡占 双方独占 買い手独占 需要独占 Ppt Download
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://kitaguni-economics.com/wp-content/uploads/2021/01/%E6%9C%80%E9%81%A9%E5%8F%8D%E5%BF%9C%E6%9B%B2%E7%B7%9A-%E3%82%B0%E3%83%A9%E3%83%953.jpg" data-lightbox="roadtrip" data-title="クールノー モデル 数量競争 均衡 反応曲線や求め方を分かりやすく どさんこ北国の経済教室">
+						<img class="card-img" src="https://kitaguni-economics.com/wp-content/uploads/2021/01/%E6%9C%80%E9%81%A9%E5%8F%8D%E5%BF%9C%E6%9B%B2%E7%B7%9A-%E3%82%B0%E3%83%A9%E3%83%953.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVIe69q1N8GB6vBhrhJOvVWihU0q7xLWtQtUg-uLKiSTQv__aiJOnPT3p46H49TtbG01Q';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				クールノー モデル 数量競争 均衡 反応曲線や求め方を分かりやすく どさんこ北国の経済教室
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://kitaguni-economics.com/wp-content/uploads/2021/01/%E3%82%AF%E3%83%BC%E3%83%AB%E3%83%8E%E3%83%BC%E7%AB%B6%E4%BA%89-%E4%BD%99%E5%89%B0-%E3%82%B0%E3%83%A9%E3%83%951.jpg" data-lightbox="roadtrip" data-title="クールノー モデル 数量競争 均衡 反応曲線や求め方を分かりやすく どさんこ北国の経済教室">
+						<img class="card-img" src="https://kitaguni-economics.com/wp-content/uploads/2021/01/%E3%82%AF%E3%83%BC%E3%83%AB%E3%83%8E%E3%83%BC%E7%AB%B6%E4%BA%89-%E4%BD%99%E5%89%B0-%E3%82%B0%E3%83%A9%E3%83%951.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnZ2aiKyh_8NTyzexFNV_W8-XW2FAQIUQ7ZTu3WzQV_ie4550CGADdeLiTiGdmNJ6xZko';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				クールノー モデル 数量競争 均衡 反応曲線や求め方を分かりやすく どさんこ北国の経済教室
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://kitaguni-economics.com/wp-content/uploads/2021/01/%E6%9C%80%E9%81%A9%E5%8F%8D%E5%BF%9C%E6%9B%B2%E7%B7%9A-%E3%82%B0%E3%83%A9%E3%83%955.jpg" data-lightbox="roadtrip" data-title="クールノー モデル 数量競争 均衡 反応曲線や求め方を分かりやすく どさんこ北国の経済教室">
+						<img class="card-img" src="https://kitaguni-economics.com/wp-content/uploads/2021/01/%E6%9C%80%E9%81%A9%E5%8F%8D%E5%BF%9C%E6%9B%B2%E7%B7%9A-%E3%82%B0%E3%83%A9%E3%83%955.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTngtZPiCGOXtSljSUQTEGVedT_gnP0sHuyLIXaG6Try5qONkSCo2RroNf9mD1ce024_D8';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				クールノー モデル 数量競争 均衡 反応曲線や求め方を分かりやすく どさんこ北国の経済教室
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="SeuGGPDtIM0e0M" data-lightbox="roadtrip" data-title="Http Www Ocw Titech Ac Jp Index Php Module General Action Download File 201217701 40 0 413 Pdf Type Cal Jwc 201217701">
+						<img class="card-img" src="SeuGGPDtIM0e0M" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpyx7FdiPgWIS7NDsiEHGr35dvFlrsFgSzT7PC73AFuK81y0ow70oH37mbUvDVJabEMto';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Http Www Ocw Titech Ac Jp Index Php Module General Action Download File 201217701 40 0 413 Pdf Type Cal Jwc 201217701
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://kitaguni-economics.com/wp-content/uploads/2021/01/%E3%82%AF%E3%83%BC%E3%83%AB%E3%83%8E%E3%83%BC%E7%AB%B6%E4%BA%89-%E4%BD%99%E5%89%B0-%E3%82%B0%E3%83%A9%E3%83%952.jpg" data-lightbox="roadtrip" data-title="クールノー モデル 数量競争 均衡 反応曲線や求め方を分かりやすく どさんこ北国の経済教室">
+						<img class="card-img" src="https://kitaguni-economics.com/wp-content/uploads/2021/01/%E3%82%AF%E3%83%BC%E3%83%AB%E3%83%8E%E3%83%BC%E7%AB%B6%E4%BA%89-%E4%BD%99%E5%89%B0-%E3%82%B0%E3%83%A9%E3%83%952.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRq3hBGS6XR7nDj5m6JA-_Mu0dcY0ZPtOmRmUu_G1RUY53ZiXi_7vTe2RKFUkx-1Uy7cuo';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				クールノー モデル 数量競争 均衡 反応曲線や求め方を分かりやすく どさんこ北国の経済教室
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+				<div class='card'>	
+			<div class="d-block p-4">
+	</div>		  	
+		  	<h3 class="h6 p-2"><b></b></h3>
+					</div>
+		
+						
+	  <div class='card'>
+	  	<a href="https://cdn-ak.f.st-hatena.com/images/fotolife/b/bestkateikyoushi/20200401/20200401175019.png" data-lightbox="roadtrip" data-title="寡占市場 クールノー均衡 シュタッケルベルグ均衡 とは 公務員試験ミクロ経済学 分かりにくいを分かりやすいに">
+						<img class="card-img" src="https://cdn-ak.f.st-hatena.com/images/fotolife/b/bestkateikyoushi/20200401/20200401175019.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMCPiyKYvzmknkIa-GKqu-Y7LdX7wQn12soe7nTaldLNCEVEyiWy3Y4QxXv6XTTQ8h8wM';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				寡占市場 クールノー均衡 シュタッケルベルグ均衡 とは 公務員試験ミクロ経済学 分かりにくいを分かりやすいに
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="http://nabenavi.net/wp-content/uploads/2019/07/cournot_ss01.png" data-lightbox="roadtrip" data-title="クールノー競争とベルトラン競争入門 3 クールノー競争の価格 生産量と社会的総余剰 Nabenavi Net">
+						<img class="card-img" src="http://nabenavi.net/wp-content/uploads/2019/07/cournot_ss01.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeoc-8nTei9sOIWfqTrGWgmHg7G3vWI3JqOXcQLwkKZp-7Mp8kNyd7XlqX4JIl7Wu_k2o';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				クールノー競争とベルトラン競争入門 3 クールノー競争の価格 生産量と社会的総余剰 Nabenavi Net
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://kitaguni-economics.com/wp-content/uploads/2021/01/%E3%82%AF%E3%83%BC%E3%83%AB%E3%83%8E%E3%83%BC%E7%AB%B6%E4%BA%89-%E3%82%B0%E3%83%A9%E3%83%957.jpg" data-lightbox="roadtrip" data-title="クールノー モデル 数量競争 均衡 反応曲線や求め方を分かりやすく どさんこ北国の経済教室">
+						<img class="card-img" src="https://kitaguni-economics.com/wp-content/uploads/2021/01/%E3%82%AF%E3%83%BC%E3%83%AB%E3%83%8E%E3%83%BC%E7%AB%B6%E4%BA%89-%E3%82%B0%E3%83%A9%E3%83%957.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0dmdkA05WNyerFSjPzOgYLoWHGAhKlPDGFMuPenZ0kIauL0jSExBbMgmThA9DztdInao';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				クールノー モデル 数量競争 均衡 反応曲線や求め方を分かりやすく どさんこ北国の経済教室
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://kitaguni-economics.com/wp-content/uploads/2021/01/%E3%82%AF%E3%83%BC%E3%83%AB%E3%83%8E%E3%83%BC%E7%AB%B6%E4%BA%89-%E3%82%B0%E3%83%A9%E3%83%954-1.jpg" data-lightbox="roadtrip" data-title="クールノー モデル 数量競争 均衡 反応曲線や求め方を分かりやすく どさんこ北国の経済教室">
+						<img class="card-img" src="https://kitaguni-economics.com/wp-content/uploads/2021/01/%E3%82%AF%E3%83%BC%E3%83%AB%E3%83%8E%E3%83%BC%E7%AB%B6%E4%BA%89-%E3%82%B0%E3%83%A9%E3%83%954-1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiPvGWCa1cHk8tQBOC9xTz0xtP_JblsQ3iKNGZ5CqrWNjfgI99XYaUMr0hCJxRrJS-dr0';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				クールノー モデル 数量競争 均衡 反応曲線や求め方を分かりやすく どさんこ北国の経済教室
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="http://nabenavi.net/wp-content/uploads/2019/08/cournot_best_reply03.png" data-lightbox="roadtrip" data-title="ゲーム理論 Nabenavi Net Part 2">
+						<img class="card-img" src="http://nabenavi.net/wp-content/uploads/2019/08/cournot_best_reply03.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmKhZ7SIfaq6Wr-NP8ghQQfB-_YUMcc7QUTGgRLV3EQ--kDu8K5JBg0Z7WgfWfb7QEVZY';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				ゲーム理論 Nabenavi Net Part 2
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://kitaguni-economics.com/wp-content/uploads/2021/01/%E3%82%AF%E3%83%BC%E3%83%AB%E3%83%8E%E3%83%BC%E7%AB%B6%E4%BA%89-%E3%82%B0%E3%83%A9%E3%83%953.jpg" data-lightbox="roadtrip" data-title="クールノー モデル 数量競争 均衡 反応曲線や求め方を分かりやすく どさんこ北国の経済教室">
+						<img class="card-img" src="https://kitaguni-economics.com/wp-content/uploads/2021/01/%E3%82%AF%E3%83%BC%E3%83%AB%E3%83%8E%E3%83%BC%E7%AB%B6%E4%BA%89-%E3%82%B0%E3%83%A9%E3%83%953.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTiGD1GYgWqnUbyxX9k1MxLuJt6DwI5yJ51YrQtq-edCxRbwHnwUm_LT60zfpawYws_Ro';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				クールノー モデル 数量競争 均衡 反応曲線や求め方を分かりやすく どさんこ北国の経済教室
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://keiei-manabu.com/cms/wp-content/themes/keiei-manabu/img/%E3%82%AF%E3%83%BC%E3%83%AB%E3%83%8E%E3%83%BC%E7%AB%B6%E4%BA%894.jpg" data-lightbox="roadtrip" data-title="経営を学ぶ 経営学 Mba 起業">
+						<img class="card-img" src="https://keiei-manabu.com/cms/wp-content/themes/keiei-manabu/img/%E3%82%AF%E3%83%BC%E3%83%AB%E3%83%8E%E3%83%BC%E7%AB%B6%E4%BA%894.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5ceuALR6l7xBI9xxhGjCMFG1T_McXH7txvb0HP3O-y-ca1yb4sp3pC1U1gBO-s6JFqy8';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				経営を学ぶ 経営学 Mba 起業
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://noschool.asia/wp-content/uploads/202007/ae245ad1f997dcc698bf8345bb8a6d18.jpeg" data-lightbox="roadtrip" data-title="複占市場の問題です 画像に添付しています その他に関する質問 勉強質問サイト">
+						<img class="card-img" src="https://noschool.asia/wp-content/uploads/202007/ae245ad1f997dcc698bf8345bb8a6d18.jpeg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrvDIvYUfUMKrv1SLo0DqG-CM88ncUSfo3IG3dJ5SaURn66yNItLveV14QhpQJLEhsu90';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				複占市場の問題です 画像に添付しています その他に関する質問 勉強質問サイト
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://www.management-consultant.info/wp-content/uploads/2018/12/kurunokinkousjy1122.jpg" data-lightbox="roadtrip" data-title="クールノー均衡とは何か 生産量の求め方も解説">
+						<img class="card-img" src="https://www.management-consultant.info/wp-content/uploads/2018/12/kurunokinkousjy1122.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShSYASb_9Z77pT0FB3hqZORe76gk9LvTw5fJ6QklYaPgD9sVrtf50kdPZ3qo1OH5FNj00';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				クールノー均衡とは何か 生産量の求め方も解説
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://keiei-manabu.com/cms/wp-content/themes/keiei-manabu/img/%E3%82%AF%E3%83%BC%E3%83%AB%E3%83%8E%E3%83%BC%E7%AB%B6%E4%BA%893.jpg" data-lightbox="roadtrip" data-title="経営を学ぶ 経営学 Mba 起業">
+						<img class="card-img" src="https://keiei-manabu.com/cms/wp-content/themes/keiei-manabu/img/%E3%82%AF%E3%83%BC%E3%83%AB%E3%83%8E%E3%83%BC%E7%AB%B6%E4%BA%893.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1_LCwU1v0cObF_gYo_9gYgDcjf0eh8IWX1uY0cu_dmFHz_nOLUzKSGlW0Rr7bKSdffSc';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				経営を学ぶ 経営学 Mba 起業
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://noschool.asia/wp-content/uploads/2018/04/E04E6C2A-357A-4FDD-9DE2-4189393295EC.jpeg" data-lightbox="roadtrip" data-title="クールノー均衡について その他に関する質問 勉強質問サイト">
+						<img class="card-img" src="https://noschool.asia/wp-content/uploads/2018/04/E04E6C2A-357A-4FDD-9DE2-4189393295EC.jpeg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnct1-eOD1LFCY8U_Ql3yA8VfFaR0xnTSOTZ8hTPBOZ8ISgGIzgFgya_0IQSApY78PHTw';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				クールノー均衡について その他に関する質問 勉強質問サイト
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://pds.exblog.jp/pds/1/201608/01/38/a0354838_16583202.jpg" data-lightbox="roadtrip" data-title="中小企業診断士 経済学 最後の復習シリーズpart10 6代目 Aのあとがき 中小企業診断士一発合格道場">
+						<img class="card-img" src="https://pds.exblog.jp/pds/1/201608/01/38/a0354838_16583202.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3PzANg9NC0tyAZp54PfaJDqdkKexkBJWmafy20dJxevN3sRx5a6P3Gkf-QaZFVGLaliQ';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				中小企業診断士 経済学 最後の復習シリーズpart10 6代目 Aのあとがき 中小企業診断士一発合格道場
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://kitaguni-economics.com/wp-content/uploads/2021/02/%E3%83%99%E3%83%AB%E3%83%88%E3%83%A9%E3%83%B3%E7%AB%B6%E4%BA%89-%E8%A3%BD%E5%93%81%E5%B7%AE%E5%88%A5%E5%8C%96-%E3%82%B0%E3%83%A9%E3%83%9517.jpg" data-lightbox="roadtrip" data-title="ベルトラン モデル 均衡 最適反応 余剰や計算方法 求め方を分かりやすく どさんこ北国の経済教室">
+						<img class="card-img" src="https://kitaguni-economics.com/wp-content/uploads/2021/02/%E3%83%99%E3%83%AB%E3%83%88%E3%83%A9%E3%83%B3%E7%AB%B6%E4%BA%89-%E8%A3%BD%E5%93%81%E5%B7%AE%E5%88%A5%E5%8C%96-%E3%82%B0%E3%83%A9%E3%83%9517.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFQkJER_Lm00FQpnm_E_LG6TtsEHzIZovJyy00BTTmt_5GK1M61am2y_ItSE0ItKIiabc';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				ベルトラン モデル 均衡 最適反応 余剰や計算方法 求め方を分かりやすく どさんこ北国の経済教室
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://pds.exblog.jp/pds/1/201608/01/38/a0354838_16540881.jpg" data-lightbox="roadtrip" data-title="中小企業診断士 経済学 最後の復習シリーズpart10 6代目 Aのあとがき 中小企業診断士一発合格道場">
+						<img class="card-img" src="https://pds.exblog.jp/pds/1/201608/01/38/a0354838_16540881.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNpleIjDIuzQsgcnTkcfQZYSZPNO4lNbRNWPBkaur12AkSe1hRFvMx0BYbdrqJkBgmJo0';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				中小企業診断士 経済学 最後の復習シリーズpart10 6代目 Aのあとがき 中小企業診断士一発合格道場
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://oshiete.xgoo.jp/_/bucket/oshietegoo/images/media/1/18438929_5497e76bcdb43/M.jpg" data-lightbox="roadtrip" data-title="クールノー均衡 市場需要関数がd 25 Pのとき2企業が存在し C Y Yと 経済学 教えて Goo">
+						<img class="card-img" src="https://oshiete.xgoo.jp/_/bucket/oshietegoo/images/media/1/18438929_5497e76bcdb43/M.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0_zLtGuumpnkPS-MojDCfdpiTNGku5WsVsw';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				クールノー均衡 市場需要関数がd 25 Pのとき2企業が存在し C Y Yと 経済学 教えて Goo
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://kitaguni-economics.com/wp-content/uploads/2021/01/%E3%82%AF%E3%83%BC%E3%83%AB%E3%83%8E%E3%83%BC%E7%AB%B6%E4%BA%89-%E4%BD%99%E5%89%B0-%E3%82%B0%E3%83%A9%E3%83%956.jpg" data-lightbox="roadtrip" data-title="クールノー モデル 数量競争 均衡 反応曲線や求め方を分かりやすく どさんこ北国の経済教室">
+						<img class="card-img" src="https://kitaguni-economics.com/wp-content/uploads/2021/01/%E3%82%AF%E3%83%BC%E3%83%AB%E3%83%8E%E3%83%BC%E7%AB%B6%E4%BA%89-%E4%BD%99%E5%89%B0-%E3%82%B0%E3%83%A9%E3%83%956.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-D3MzWIaIGudZeIXaSXxVIFYtB8sHgNit3A';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				クールノー モデル 数量競争 均衡 反応曲線や求め方を分かりやすく どさんこ北国の経済教室
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="http://nabenavi.net/wp-content/uploads/2019/08/cournot_best_reply02.png" data-lightbox="roadtrip" data-title="ゲーム理論 Nabenavi Net Part 2">
+						<img class="card-img" src="http://nabenavi.net/wp-content/uploads/2019/08/cournot_best_reply02.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWCJQFQK8uEbhrPnkTdR7aKHs-QxokL4nnww';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				ゲーム理論 Nabenavi Net Part 2
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://images-na.ssl-images-amazon.com/images/I/41e+3WFeSGL._SY300_.jpg" data-lightbox="roadtrip" data-title="ミクロ経済学入門 11 Book Series Kindle Edition">
+						<img class="card-img" src="https://images-na.ssl-images-amazon.com/images/I/41e+3WFeSGL._SY300_.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ26zka0bwihTnw7be91h7qjz-oyvPG3_2qaQ';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				ミクロ経済学入門 11 Book Series Kindle Edition
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="/search?q=%E3%82%AF%E3%83%BC%E3%83%AB%E3%83%8E%E3%83%BC%E5%9D%87%E8%A1%A1+%E8%A8%88%E7%AE%97&amp;tbm=isch" data-lightbox="roadtrip" data-title="Https Encrypted Tbn0 Gstatic Com Images Q Tbn And9gcrz5im0 Pew3pxbnb2e203d8m We84l2rakzgyuhx28t0ystceg Usqp Cau">
+						<img class="card-img" src="/search?q=%E3%82%AF%E3%83%BC%E3%83%AB%E3%83%8E%E3%83%BC%E5%9D%87%E8%A1%A1+%E8%A8%88%E7%AE%97&amp;tbm=isch" onerror="this.onerror=null;this.src='/search?q=%E3%82%AF%E3%83%BC%E3%83%AB%E3%83%8E%E3%83%BC%E5%9D%87%E8%A1%A1+%E8%A8%88%E7%AE%97&amp;tbm=isch';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Https Encrypted Tbn0 Gstatic Com Images Q Tbn And9gcrz5im0 Pew3pxbnb2e203d8m We84l2rakzgyuhx28t0ystceg Usqp Cau
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://www.management-consultant.info/wp-content/uploads/2018/12/kurunokinkou1121.jpg" data-lightbox="roadtrip" data-title="クールノー均衡とは何か 生産量の求め方も解説">
+						<img class="card-img" src="https://www.management-consultant.info/wp-content/uploads/2018/12/kurunokinkou1121.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMmxBLwJs2h1W643ueMCfMc0_xmKPlHzKr9A';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				クールノー均衡とは何か 生産量の求め方も解説
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="http://nabenavi.net/wp-content/uploads/2020/05/chicken1.png" data-lightbox="roadtrip" data-title="ゲーム理論 Nabenavi Net Part 2">
+						<img class="card-img" src="http://nabenavi.net/wp-content/uploads/2020/05/chicken1.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTI2RmDyxsB1xY6PG3GztwYC771LhzjLUGrdg';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				ゲーム理論 Nabenavi Net Part 2
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://wiis.info/wp-content/uploads/2019/10/cournot-03-300x274.png" data-lightbox="roadtrip" data-title="クールノー競争とカルテル ゲームの例 ゲーム理論 ワイズ">
+						<img class="card-img" src="https://wiis.info/wp-content/uploads/2019/10/cournot-03-300x274.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR33AXSutXmC0gkZ6ZU8aWI37Ah_oY-8h7feA';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				クールノー競争とカルテル ゲームの例 ゲーム理論 ワイズ
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://keiei-manabu.com/cms/wp-content/themes/keiei-manabu/img/%E3%83%99%E3%83%AB%E3%83%88%E3%83%A9%E3%83%B3%E7%AB%B6%E4%BA%892.jpg" data-lightbox="roadtrip" data-title="経営を学ぶ 経営学 Mba 起業">
+						<img class="card-img" src="https://keiei-manabu.com/cms/wp-content/themes/keiei-manabu/img/%E3%83%99%E3%83%AB%E3%83%88%E3%83%A9%E3%83%B3%E7%AB%B6%E4%BA%892.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQM9EbsNGq_Nd62CEtTEH2aqDhhlezOb7O2WA';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				経営を学ぶ 経営学 Mba 起業
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://slidesplayer.net/slide/11198741/60/images/24/%E5%AF%A1%E5%8D%A0%E5%B8%82%E5%A0%B4%E3%81%AE%E5%9D%87%E8%A1%A1+%E4%BE%8B%EF%BC%93%EF%BC%89%E3%82%AF%E3%83%BC%E3%83%AB%E3%83%8E%E3%83%BC%E3%81%AE%E8%A4%87%E5%8D%A0%E5%B8%82%E5%A0%B4+%E8%B2%A1%E3%81%AE%E4%BE%A1%E6%A0%BC%E3%82%92p%E3%81%A8%E3%81%97%E3%80%81x1%E3%80%81x2%E3%81%A7%E8%A1%A8%E3%81%99%E3%81%A8+%EF%BC%92%E3%81%A4%E3%81%AE%E4%BC%81%E6%A5%AD%E3%81%AE%E8%B2%BB%E7%94%A8%E9%96%A2%E6%95%B0%E3%82%92%EF%BC%A31%E3%80%81%EF%BC%A32%E3%81%A8%E3%81%99%E3%82%8B%E3%81%A8.jpg" data-lightbox="roadtrip" data-title="新ゲーム理論 第 部 非協力ゲームの理論 第2章 戦略形ゲームのナッシュ均衡 Ppt Download">
+						<img class="card-img" src="https://slidesplayer.net/slide/11198741/60/images/24/%E5%AF%A1%E5%8D%A0%E5%B8%82%E5%A0%B4%E3%81%AE%E5%9D%87%E8%A1%A1+%E4%BE%8B%EF%BC%93%EF%BC%89%E3%82%AF%E3%83%BC%E3%83%AB%E3%83%8E%E3%83%BC%E3%81%AE%E8%A4%87%E5%8D%A0%E5%B8%82%E5%A0%B4+%E8%B2%A1%E3%81%AE%E4%BE%A1%E6%A0%BC%E3%82%92p%E3%81%A8%E3%81%97%E3%80%81x1%E3%80%81x2%E3%81%A7%E8%A1%A8%E3%81%99%E3%81%A8+%EF%BC%92%E3%81%A4%E3%81%AE%E4%BC%81%E6%A5%AD%E3%81%AE%E8%B2%BB%E7%94%A8%E9%96%A2%E6%95%B0%E3%82%92%EF%BC%A31%E3%80%81%EF%BC%A32%E3%81%A8%E3%81%99%E3%82%8B%E3%81%A8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSB89tF1TdN-Ynyu2ywLgs1ADZwrLVU-KVxpA';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				新ゲーム理論 第 部 非協力ゲームの理論 第2章 戦略形ゲームのナッシュ均衡 Ppt Download
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://keiei-manabu.com/cms/wp-content/themes/keiei-manabu/img/%E3%83%99%E3%83%AB%E3%83%88%E3%83%A9%E3%83%B3%E7%AB%B6%E4%BA%891.jpg" data-lightbox="roadtrip" data-title="経営を学ぶ 経営学 Mba 起業">
+						<img class="card-img" src="https://keiei-manabu.com/cms/wp-content/themes/keiei-manabu/img/%E3%83%99%E3%83%AB%E3%83%88%E3%83%A9%E3%83%B3%E7%AB%B6%E4%BA%891.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJuWW0WX1K_4uUUmvfS9mTSOaUQLNXohDzqA';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				経営を学ぶ 経営学 Mba 起業
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="http://nabenavi.net/wp-content/uploads/2019/07/solve_nash07.png" data-lightbox="roadtrip" data-title="ゲーム理論 Nabenavi Net Part 2">
+						<img class="card-img" src="http://nabenavi.net/wp-content/uploads/2019/07/solve_nash07.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtzoVVvgn6xvAg976lgtIQlQkF8-kFdgfwhA';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				ゲーム理論 Nabenavi Net Part 2
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://wiis.info/wp-content/uploads/2020/12/sgci-08.svg" data-lightbox="roadtrip" data-title="クールノー競争 クールノー均衡 ゲームの例 ゲーム理論 ワイズ">
+						<img class="card-img" src="https://wiis.info/wp-content/uploads/2020/12/sgci-08.svg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzxlYFNWts7TOPk9A_aADQ0oYf9mZmf46SPA';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				クールノー競争 クールノー均衡 ゲームの例 ゲーム理論 ワイズ
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+		
+	</div>
+
+		 
+		<div class="d-block mt-4 p-3">
+
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+		</div>
+		
+				</div>
+				<div class="col-sm-12 widget">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center py-4">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+					
+				</div>
+			</div>
+		</main>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+		
+		<!-- Footer CSS JS -->
+		
+		
+		
+			</body>
+</html>

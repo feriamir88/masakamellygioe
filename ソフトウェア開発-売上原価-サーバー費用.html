@@ -1,0 +1,678 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+		<link href="https://fonts.googleapis.com/css?family=Mr+Dafoe" rel="stylesheet" type="text/css">
+
+		<style type="text/css">
+			html,body{font-family:"Open Sans",Arial,sans-serif;font-size:14px;font-weight:400;background:#f3f3f3 url(https://goodpatch.com/blog/wp-content/uploads/PL11.png
+) no-repeat center center fixed;background-size:cover;height:100%}#title{font-family:"Mr Dafoe",Times,serif;font-size:34px;background:rgba(255,255,255,.8);margin-bottom:34px}.header{padding-bottom:13px;margin-bottom:13px;border-bottom:1px solid #eee}a{color:#26ADE4;text-decoration:none}#title a{color:#333;margin-left:21px}#title a:hover{text-decoration:none;color:#26ADE4}.sidebar ul{margin:0;padding:0}.sidebar ul li{list-style:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0 13px 0;padding:13px}.navi a{margin:5px 2px;font-size:95%}.main{margin-top: 6rem;}.form-inline .form-control{min-width: 300px;}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}.main{margin-top: 6rem;}.form-inline .form-control{min-width: 300px;}			
+		</style>
+
+		<title>ソフトウェア開発 売上原価 サーバー費用</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "James"
+  },
+  "headline": "ソフトウェア開発 売上原価 サーバー費用",
+  "datePublished": "2021-04-24",
+  "image": [https://staging-qiita-user-contents.imgix.net/https%3A%2F%2Fcdn.qiita.com%2Fassets%2Fpublic%2Farticle-ogp-background-1150d8b18a7c15795b701a55ae908f94.png?ixlib=rb-4.0.0&amp;w=1200&amp;mark=https%3A%2F%2Fstaging-qiita-user-contents.imgix.net%2F~text%3Fixlib%3Drb-4.0.0%26w%3D840%26h%3D380%26txt%3D%25E3%2582%25B7%25E3%2582%25B9%25E3%2583%2586%25E3%2583%25A0%25E9%2596%258B%25E7%2599%25BA%25E6%25A5%25AD%25E5%258B%2599%25E8%2587%25AA%25E4%25BD%2593%25E3%2581%25AE%25E4%25BC%259A%25E8%25A8%2588%25E5%2587%25A6%25E7%2590%2586%25E3%2581%25BE%25E3%2581%25A8%25E3%2582%2581%26txt-color%3D%2523333%26txt-font%3DHiragino%2520Sans%2520W6%26txt-size%3D54%26txt-clip%3Dellipsis%26txt-align%3Dcenter%252Cmiddle%26s%3Dcff0a4928240e807f89f899271877584&amp;mark-align=center%2Cmiddle&amp;blend=https%3A%2F%2Fstaging-qiita-user-contents.imgix.net%2F~text%3Fixlib%3Drb-4.0.0%26w%3D840%26h%3D500%26txt%3D%2540tmkt%26txt-color%3D%2523333%26txt-font%3DHiragino%2520Sans%2520W6%26txt-size%3D45%26txt-align%3Dright%252Cbottom%26s%3Da3714f82e15e4aea0e01a4de94bf44af&amp;blend-align=center%2Cmiddle&amp;blend-mode=normal&amp;s=b76da60cff801c7c9b21947c19bd9be3,https://miro.medium.com/max/1838/1*PE1cnAalrb56qVn2FfCb2g.png,https://mag.leaner.jp/wp-content/uploads/2020/07/20200701.IT%E4%BC%81%E6%A5%AD%E3%81%AE%E3%82%B3%E3%82%B9%E3%83%88%E5%89%8A%E6%B8%9B.4-1024x539.png],
+  "publisher": {
+    "@type": "Organization",
+    "name": "Blog",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=ソフトウェア開発 売上原価 サーバー費用",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+		<!-- Head tag Code -->	</head>
+	<body>
+		<header class="bg-white fixed-top">			
+			<nav class="navbar navbar-light bg-white mb-0">
+				<div class="container justify-content-center justify-content-sm-between">	
+				  <a href="/" title="Blog" class="navbar-brand mb-1">Blog</a>
+				  				</div>			  
+			</nav>				
+		</header>
+		<main class="main container bg-white">
+			<div class="col-md-12 my-4" align="center">
+				<div class="d-block p-4">
+	<br/><center>
+<script type="text/javascript">
+	atOptions = {
+		'key' : 'd232bd6e1c0d85f8dc8c8119bc5f5a1e',
+		'format' : 'iframe',
+		'height' : 250,
+		'width' : 300,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://magnificentmanlyyeast.com/d232bd6e1c0d85f8dc8c8119bc5f5a1e/invoke.js"></scr' + 'ipt>');
+</script></center><br/>
+</div>			</div>
+			<div class="row header">
+				<div class="col-sm-12 text-center p-2">
+						<h1>ソフトウェア開発 売上原価 サーバー費用</h1>
+
+	
+	<div class="navi text-center">
+										<a class="badge badge-secondary" href="/waikato-university-pathways-college-%E8%B2%BB%E7%94%A8.html">waikato university pathways college 費用</a>
+											<a class="badge badge-warning" href="/%E3%81%84%E3%81%91-%E3%81%AE-%E7%94%A3%E5%A9%A6-%E4%BA%BA-%E7%A7%91-%E8%B2%BB%E7%94%A8.html">いけ の 産婦 人 科 費用</a>
+											<a class="badge badge-info" href="/%E3%81%8A%E9%A2%A8%E5%91%82-%E8%B2%BB%E7%94%A8-1%E5%9B%9E.html">お風呂 費用 1回</a>
+											<a class="badge badge-light" href="/ioc%E3%81%8B%E3%82%89%E6%9C%AD%E5%B9%8C%E3%81%AE%E8%B2%BB%E7%94%A8%E3%82%92%E5%87%BA%E3%81%95%E3%81%9B%E3%82%8C%E3%81%B0%E5%B0%8F%E6%B1%A0%E9%83%BD%E7%9F%A5%E4%BA%8B%E3%81%AE%E4%BE%A1%E5%80%A4.html">iocから札幌の費用を出させれば小池都知事の価値</a>
+											<a class="badge badge-danger" href="/%E3%83%90%E3%82%A4%E3%82%AF-%E8%BB%8A%E6%A4%9C-%E7%82%B9%E6%A4%9C%E9%A0%85%E7%9B%AE-%E8%B2%BB%E7%94%A8.html">バイク 車検 点検項目 費用</a>
+											<a class="badge badge-secondary" href="/%E3%82%AF%E3%83%A9%E3%82%A6%E3%83%89-%E5%B0%8E%E5%85%A5%E8%B2%BB%E7%94%A8-%E7%B9%B0%E5%BB%B6%E8%B3%87%E7%94%A3.html">クラウド 導入費用 繰延資産</a>
+											<a class="badge badge-dark" href="/%E3%82%B5%E3%83%83%E3%82%B7-%E3%82%AB%E3%83%90%E3%83%BC%E5%B7%A5%E6%B3%95-%E8%B2%BB%E7%94%A8-ykk.html">サッシ カバー工法 費用 ykk</a>
+											<a class="badge badge-danger" href="/%E3%81%93%E3%81%A9%E3%82%82%E3%81%A1%E3%82%83%E3%82%8C%E3%82%93%E3%81%98-english-%E9%80%94%E4%B8%AD%E3%81%8B%E3%82%89%E5%85%A5%E4%BC%9A-%E8%B2%BB%E7%94%A8.html">こどもちゃれんじ english 途中から入会 費用</a>
+											<a class="badge badge-light" href="/%E3%82%BD%E3%83%95%E3%83%88%E3%83%90%E3%83%B3%E3%82%AF-%E3%82%B9%E3%83%9E%E3%83%9B%E5%86%85%E8%94%B5%E3%83%90%E3%83%83%E3%83%86%E3%83%AA%E3%83%BC%E4%BA%A4%E6%8F%9B%E8%B2%BB%E7%94%A8.html">ソフトバンク スマホ内蔵バッテリー交換費用</a>
+											<a class="badge badge-primary" href="/%E3%81%AF%E3%81%97%E3%81%8B-%E6%8A%97%E4%BD%93%E6%A4%9C%E6%9F%BB-%E8%B2%BB%E7%94%A8-%E6%88%B8%E7%94%B0%E5%B8%82.html">はしか 抗体検査 費用 戸田市</a>
+											<a class="badge badge-light" href="/%E3%81%BE%E3%81%B6%E3%81%9F%E3%81%AE%E7%AA%AA%E3%81%BF-%E3%83%92%E3%82%A2%E3%83%AB%E3%83%AD%E3%83%B3%E9%85%B8-%E8%B2%BB%E7%94%A8.html">まぶたの窪み ヒアルロン酸 費用</a>
+											<a class="badge badge-danger" href="/%E3%83%94%E3%82%A2%E3%83%8E%E7%99%BA%E8%A1%A8%E4%BC%9A%E8%B2%BB%E7%94%A8-%E8%8A%B1%E4%BB%A3%E5%90%AB%E3%82%80.html">ピアノ発表会費用 花代含む</a>
+											<a class="badge badge-dark" href="/%E3%82%BF%E3%83%B3%E3%82%B9%E3%81%AE%E5%AE%A4%E5%86%85%E7%A7%BB%E5%8B%95%E8%B2%BB%E7%94%A8.html">タンスの室内移動費用</a>
+											<a class="badge badge-info" href="/sbi-%E3%83%8D%E3%83%83%E3%83%88%E5%B0%82%E7%94%A8%E4%BD%8F%E5%AE%85%E3%83%AD%E3%83%BC%E3%83%B3-%E7%81%AB%E7%81%BD%E4%BF%9D%E9%99%BA-%E8%B2%BB%E7%94%A8.html">sbi ネット専用住宅ローン 火災保険 費用</a>
+											<a class="badge badge-info" href="/s321-%E3%83%AA%E3%82%AD%E3%83%83%E3%83%89%E3%83%81%E3%83%A5%E3%83%BC%E3%83%96-%E4%BF%AE%E7%90%86%E8%B2%BB%E7%94%A8.html">s321 リキッドチューブ 修理費用</a>
+						</div>
+<center>
+	<script type="text/javascript">
+	atOptions = {
+		'key' : 'a7e6ae4bcf1c49afa3b184d0c694ad6c',
+		'format' : 'iframe',
+		'height' : 50,
+		'width' : 320,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://magnificentmanlyyeast.com/a7e6ae4bcf1c49afa3b184d0c694ad6c/invoke.js"></scr' + 'ipt>');
+</script>
+		
+	</center>
+					
+				</div>
+			</div>
+			<div class="row content mb-4">
+				<div class="col-md-12">					
+					
+	
+	<div class="card-columns">
+						
+	  <div class='card'>
+	  	<a href="https://www.oro.com/zac/blog/119a46b901e2b74a807d2686b8fa4958678b63cc.png" data-lightbox="roadtrip" data-title="It企業における原価計算 目的 メリット 原価率のkpi Zac Blog 企業の生産性向上を応援するブログ 株式会社オロ">
+						<img class="card-img" src="https://www.oro.com/zac/blog/119a46b901e2b74a807d2686b8fa4958678b63cc.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRl9R4IVfJOaCiFZNLHYhsnKf4JowzDDNObGcLZZ1AeDMOf0UwmARSAlpj4yEQguYsd-EI';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				It企業における原価計算 目的 メリット 原価率のkpi Zac Blog 企業の生産性向上を応援するブログ 株式会社オロ
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://img.logmi.jp/article_images/XoSTx8V23jZSnsBtoRbhPR.jpg" data-lightbox="roadtrip" data-title="Hennge 増収し利益率も成長 販管費のうち原価率は逓減 ログミーファイナンス">
+						<img class="card-img" src="https://img.logmi.jp/article_images/XoSTx8V23jZSnsBtoRbhPR.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf4s4x5dC4eWTpw7YhMOL5IoKcY5WgpHeRAIIn0EqI_bQ3F1s5gxN6uAoTQW644-ZcJlI';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Hennge 増収し利益率も成長 販管費のうち原価率は逓減 ログミーファイナンス
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://img.logmi.jp/article_images/LKwD6MBq2QfKaTdSrR3ULe.jpg" data-lightbox="roadtrip" data-title="Hennge 増収し利益率も成長 販管費のうち原価率は逓減 ログミーファイナンス">
+						<img class="card-img" src="https://img.logmi.jp/article_images/LKwD6MBq2QfKaTdSrR3ULe.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxTGD0fP1t-1pOOu1IXtd5SQA43vs62nKftjKlYzADm_XXhOl8pLGP2dXd1QarY9NG0L4';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Hennge 増収し利益率も成長 販管費のうち原価率は逓減 ログミーファイナンス
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://www.oro.com/zac/blog/39496d39cfeb62bfbcb044c238d97e04749fd95c.png" data-lightbox="roadtrip" data-title="It企業における原価計算 目的 メリット 原価率のkpi Zac Blog 企業の生産性向上を応援するブログ 株式会社オロ">
+						<img class="card-img" src="https://www.oro.com/zac/blog/39496d39cfeb62bfbcb044c238d97e04749fd95c.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBkprYupv39TTyZjLWKR83q31oZAoNKFpS9TuJFWvT9H78sCQITonPPv8oYnxboqo07jY';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				It企業における原価計算 目的 メリット 原価率のkpi Zac Blog 企業の生産性向上を応援するブログ 株式会社オロ
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://www.oro.com/zac/blog/AdobeStock_269975756-min.jpeg" data-lightbox="roadtrip" data-title="It企業における原価計算 目的 メリット 原価率のkpi Zac Blog 企業の生産性向上を応援するブログ 株式会社オロ">
+						<img class="card-img" src="https://www.oro.com/zac/blog/AdobeStock_269975756-min.jpeg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpmBiQzSMzqt2ie5YNnmd1xlaEB_XUfoJW2oOK8DmSKL7voz3ThRCFGjJbDQYAQdasxVI';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				It企業における原価計算 目的 メリット 原価率のkpi Zac Blog 企業の生産性向上を応援するブログ 株式会社オロ
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://jp.techcrunch.com/wp-content/uploads/2019/09/saas2019-chart1.png" data-lightbox="roadtrip" data-title="日本発の強いsaasビジネスを作るには Saasビジネスモデルを7年の経験から徹底解剖 Techcrunch Japan">
+						<img class="card-img" src="https://jp.techcrunch.com/wp-content/uploads/2019/09/saas2019-chart1.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSC4aiinL7MQJDLbEPWvDWhg3fGWVuMVkFYydVAMCZU5yMPW1VaPt5F4yG2B65rufdYgfw';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				日本発の強いsaasビジネスを作るには Saasビジネスモデルを7年の経験から徹底解剖 Techcrunch Japan
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+				<div class='card'>	
+			<div class="d-block p-4">
+	</div>		  	
+		  	<h3 class="h6 p-2"><b></b></h3>
+					</div>
+		
+						
+	  <div class='card'>
+	  	<a href="https://img.logmi.jp/article_images/7wKoopRXnZscd4EiLbbm6D.jpg" data-lightbox="roadtrip" data-title="Hennge 増収し利益率も成長 販管費のうち原価率は逓減 ログミーファイナンス">
+						<img class="card-img" src="https://img.logmi.jp/article_images/7wKoopRXnZscd4EiLbbm6D.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRL_f_mmuUA4c-giyZ60wUZels7sk82A8R51ZWkbDRDirZtN0EvvK5Iqe-pm2gk7xDZcAI';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Hennge 増収し利益率も成長 販管費のうち原価率は逓減 ログミーファイナンス
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://mag.leaner.jp/wp-content/uploads/2020/07/20200701.IT%E4%BC%81%E6%A5%AD%E3%81%AE%E3%82%B3%E3%82%B9%E3%83%88%E5%89%8A%E6%B8%9B.4-1024x539.png" data-lightbox="roadtrip" data-title="It企業 インターネット業界のコスト削減 販管費率や人件費率 費目別の削減アイデアを紹介 Leaner Magazine リーナーマガジン">
+						<img class="card-img" src="https://mag.leaner.jp/wp-content/uploads/2020/07/20200701.IT%E4%BC%81%E6%A5%AD%E3%81%AE%E3%82%B3%E3%82%B9%E3%83%88%E5%89%8A%E6%B8%9B.4-1024x539.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRm8ytuelON-lMePXHIxNCQYEIL6HwMCE3LoPMk7l49omQVC0oAZIeWokkS-QiTJcEmNDw';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				It企業 インターネット業界のコスト削減 販管費率や人件費率 費目別の削減アイデアを紹介 Leaner Magazine リーナーマガジン
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://img.logmi.jp/wp-content/uploads/2019/01/material0-005.jpg" data-lightbox="roadtrip" data-title="アルファシステムズ 2q売上過去最高 オープンシステム分野の受注拡大が寄与 ログミーファイナンス">
+						<img class="card-img" src="https://img.logmi.jp/wp-content/uploads/2019/01/material0-005.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCumjwhCOaULoYRmmyWaV-uBEoa1gJnmlezyWNIy0m5XLHWDjlWsLDoz_dHYGsySSUK4w';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				アルファシステムズ 2q売上過去最高 オープンシステム分野の受注拡大が寄与 ログミーファイナンス
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://www.oro.com/zac/blog/img/share/img-cv_08.png" data-lightbox="roadtrip" data-title="It企業における原価計算 目的 メリット 原価率のkpi Zac Blog 企業の生産性向上を応援するブログ 株式会社オロ">
+						<img class="card-img" src="https://www.oro.com/zac/blog/img/share/img-cv_08.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR16np5Kw-0Z3ZqgKvERHCHf2TtSknEi78W0gc9IthtshSXSpprZm6Y2TxISp02EOJ333U';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				It企業における原価計算 目的 メリット 原価率のkpi Zac Blog 企業の生産性向上を応援するブログ 株式会社オロ
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="http://www.icst.co.jp/images/supera/pro_01.jpg" data-lightbox="roadtrip" data-title="売上原価pro 財務会計ソフトウェアおよび関連ソフトウェアの開発 販売 サービスのアイシーエス通商">
+						<img class="card-img" src="http://www.icst.co.jp/images/supera/pro_01.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBiqf12EkXZhL4F8kGoqQcI8frCKNpiSW1j_xEluVNAftcJt7BX-_nIB2B1B3HQ2yBdg';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				売上原価pro 財務会計ソフトウェアおよび関連ソフトウェアの開発 販売 サービスのアイシーエス通商
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://miro.medium.com/max/1838/1*PE1cnAalrb56qVn2FfCb2g.png" data-lightbox="roadtrip" data-title="スタートアップのお金と指標入門講座 利益と利益率 Profit Margin By Taka Umada Medium">
+						<img class="card-img" src="https://miro.medium.com/max/1838/1*PE1cnAalrb56qVn2FfCb2g.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNDJpfWvHAeDUinDn-NE83oZTDuQi0ol88-JhBYml6QrSQpGHM5SSjW8xKoDMSZVbwUxc';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				スタートアップのお金と指標入門講座 利益と利益率 Profit Margin By Taka Umada Medium
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://doda.jp/companyinfo/contents/finance/img/5_img_keijo.png" data-lightbox="roadtrip" data-title="売上高とは 営業利益と経常利益はどう違う 転職ならdoda デューダ">
+						<img class="card-img" src="https://doda.jp/companyinfo/contents/finance/img/5_img_keijo.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThoVL5noo6mAK7dc8e-XjFYG5MN116mCMs-ow4azUzhSVQgV0ZDxFNp0pzg2DpXOYBpaU';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				売上高とは 営業利益と経常利益はどう違う 転職ならdoda デューダ
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://pbs.twimg.com/media/EfXNLCAVoAAv5OY.png" data-lightbox="roadtrip" data-title="30分企業分析 にしけい On Twitter 30分企業分析 費用項目を確認 Chatworkが最も費用を掛けているのは人件費 生産性を確認するため従業員1人あたり売上高を計算すると 前年と変わっていませんでした 人材を増やしたのに変わっていないということは それだけ生産">
+						<img class="card-img" src="https://pbs.twimg.com/media/EfXNLCAVoAAv5OY.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGDkMoGKWNhkdpC7_xL_xpBI7pUlX0mtvqUPFmd7Z2lUA6g1F3lB67ebZ_SP1BGQqx7xg';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				30分企業分析 にしけい On Twitter 30分企業分析 費用項目を確認 Chatworkが最も費用を掛けているのは人件費 生産性を確認するため従業員1人あたり売上高を計算すると 前年と変わっていませんでした 人材を増やしたのに変わっていないということは それだけ生産
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://mag.leaner.jp/wp-content/uploads/2020/07/20200701.%E3%82%B3%E3%82%B9%E3%83%88%E6%A7%8B%E9%80%A09%E3%83%BCKDDI%EF%BC%85-1024x647.png" data-lightbox="roadtrip" data-title="It企業 インターネット業界のコスト削減 販管費率や人件費率 費目別の削減アイデアを紹介 Leaner Magazine リーナーマガジン">
+						<img class="card-img" src="https://mag.leaner.jp/wp-content/uploads/2020/07/20200701.%E3%82%B3%E3%82%B9%E3%83%88%E6%A7%8B%E9%80%A09%E3%83%BCKDDI%EF%BC%85-1024x647.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXXbjieebL0779uxEzSJBiBguYjZRX71R5Aj2yShBAkbPFSP9fmCgXC5hDzbJE0eCMOX0';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				It企業 インターネット業界のコスト削減 販管費率や人件費率 費目別の削減アイデアを紹介 Leaner Magazine リーナーマガジン
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://biz.moneyforward.com/accounting/basic/wp-content/uploads/2020/05/5012-243x300.png" data-lightbox="roadtrip" data-title="情報通信業の会計 経理業務 クラウド会計ソフト マネーフォワード">
+						<img class="card-img" src="https://biz.moneyforward.com/accounting/basic/wp-content/uploads/2020/05/5012-243x300.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRebAkuKSOck-lg97Fnqj-F2mGQXIGTiIAZ73F0AEQKxglqgJM6zX7A_07EoqKQ2XFCPv0';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				情報通信業の会計 経理業務 クラウド会計ソフト マネーフォワード
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://cdn.it-trend.jp/articles/3288/current/article_scheme?1601532471" data-lightbox="roadtrip" data-title="売上原価と販管費の違いとは 費用の内訳を詳しく解説 Itトレンド">
+						<img class="card-img" src="https://cdn.it-trend.jp/articles/3288/current/article_scheme?1601532471" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGfyFWkiXNN01hBfdeQ8Jwa9dKVeULLu3eZXs92OVK5wUEjuwQBPbqb1XTpINAjLJyb58';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				売上原価と販管費の違いとは 費用の内訳を詳しく解説 Itトレンド
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://goodpatch.com/blog/wp-content/uploads/PL11.png" data-lightbox="roadtrip" data-title="いまさら聞けないお金の知識 損益計算書 P L とは Goodpatch Blog グッドパッチブログ">
+						<img class="card-img" src="https://goodpatch.com/blog/wp-content/uploads/PL11.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_rh4fTD_bqxJW_yDbO2fPZ1IqNGQoJWv1gWhlHi9hm6uFbObRATvN1MsrSFVM0aSC5Zo';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				いまさら聞けないお金の知識 損益計算書 P L とは Goodpatch Blog グッドパッチブログ
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://staging-qiita-user-contents.imgix.net/https%3A%2F%2Fcdn.qiita.com%2Fassets%2Fpublic%2Farticle-ogp-background-1150d8b18a7c15795b701a55ae908f94.png?ixlib=rb-4.0.0&amp;w=1200&amp;mark=https%3A%2F%2Fstaging-qiita-user-contents.imgix.net%2F~text%3Fixlib%3Drb-4.0.0%26w%3D840%26h%3D380%26txt%3D%25E3%2582%25B7%25E3%2582%25B9%25E3%2583%2586%25E3%2583%25A0%25E9%2596%258B%25E7%2599%25BA%25E6%25A5%25AD%25E5%258B%2599%25E8%2587%25AA%25E4%25BD%2593%25E3%2581%25AE%25E4%25BC%259A%25E8%25A8%2588%25E5%2587%25A6%25E7%2590%2586%25E3%2581%25BE%25E3%2581%25A8%25E3%2582%2581%26txt-color%3D%2523333%26txt-font%3DHiragino%2520Sans%2520W6%26txt-size%3D54%26txt-clip%3Dellipsis%26txt-align%3Dcenter%252Cmiddle%26s%3Dcff0a4928240e807f89f899271877584&amp;mark-align=center%2Cmiddle&amp;blend=https%3A%2F%2Fstaging-qiita-user-contents.imgix.net%2F~text%3Fixlib%3Drb-4.0.0%26w%3D840%26h%3D500%26txt%3D%2540tmkt%26txt-color%3D%2523333%26txt-font%3DHiragino%2520Sans%2520W6%26txt-size%3D45%26txt-align%3Dright%252Cbottom%26s%3Da3714f82e15e4aea0e01a4de94bf44af&amp;blend-align=center%2Cmiddle&amp;blend-mode=normal&amp;s=b76da60cff801c7c9b21947c19bd9be3" data-lightbox="roadtrip" data-title="システム開発業務自体の会計処理まとめ Qiita">
+						<img class="card-img" src="https://staging-qiita-user-contents.imgix.net/https%3A%2F%2Fcdn.qiita.com%2Fassets%2Fpublic%2Farticle-ogp-background-1150d8b18a7c15795b701a55ae908f94.png?ixlib=rb-4.0.0&amp;w=1200&amp;mark=https%3A%2F%2Fstaging-qiita-user-contents.imgix.net%2F~text%3Fixlib%3Drb-4.0.0%26w%3D840%26h%3D380%26txt%3D%25E3%2582%25B7%25E3%2582%25B9%25E3%2583%2586%25E3%2583%25A0%25E9%2596%258B%25E7%2599%25BA%25E6%25A5%25AD%25E5%258B%2599%25E8%2587%25AA%25E4%25BD%2593%25E3%2581%25AE%25E4%25BC%259A%25E8%25A8%2588%25E5%2587%25A6%25E7%2590%2586%25E3%2581%25BE%25E3%2581%25A8%25E3%2582%2581%26txt-color%3D%2523333%26txt-font%3DHiragino%2520Sans%2520W6%26txt-size%3D54%26txt-clip%3Dellipsis%26txt-align%3Dcenter%252Cmiddle%26s%3Dcff0a4928240e807f89f899271877584&amp;mark-align=center%2Cmiddle&amp;blend=https%3A%2F%2Fstaging-qiita-user-contents.imgix.net%2F~text%3Fixlib%3Drb-4.0.0%26w%3D840%26h%3D500%26txt%3D%2540tmkt%26txt-color%3D%2523333%26txt-font%3DHiragino%2520Sans%2520W6%26txt-size%3D45%26txt-align%3Dright%252Cbottom%26s%3Da3714f82e15e4aea0e01a4de94bf44af&amp;blend-align=center%2Cmiddle&amp;blend-mode=normal&amp;s=b76da60cff801c7c9b21947c19bd9be3" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj3eIkhHikIHJBZkzb55jtV97vuC7HjdHdg9MVZ5Xz9ZiVqA-iM-OMAqjqen2XNmg1rv0';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				システム開発業務自体の会計処理まとめ Qiita
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://goodpatch.com/blog/wp-content/uploads/PL12.png" data-lightbox="roadtrip" data-title="いまさら聞けないお金の知識 損益計算書 P L とは Goodpatch Blog グッドパッチブログ">
+						<img class="card-img" src="https://goodpatch.com/blog/wp-content/uploads/PL12.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSxo25zD2e669821-BsZG4wdIBdXdbWpmYA-9flCAym7YkL5ubzxJJR0VMoLO-74h8_ZI';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				いまさら聞けないお金の知識 損益計算書 P L とは Goodpatch Blog グッドパッチブログ
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://doda.jp/companyinfo/contents/finance/img/6_img_graph03.png" data-lightbox="roadtrip" data-title="損益計算書とは 特に見るべきポイントは 転職ならdoda デューダ">
+						<img class="card-img" src="https://doda.jp/companyinfo/contents/finance/img/6_img_graph03.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREDaQlA_ctm4OKCG-NseBTGHzlDXPLONry4A';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				損益計算書とは 特に見るべきポイントは 転職ならdoda デューダ
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://jp.techcrunch.com/wp-content/uploads/2019/09/image4.png" data-lightbox="roadtrip" data-title="日本発の強いsaasビジネスを作るには Saasビジネスモデルを7年の経験から徹底解剖 Techcrunch Japan">
+						<img class="card-img" src="https://jp.techcrunch.com/wp-content/uploads/2019/09/image4.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREC6DuN-7G8HF9DfSJMF1zX8U7ZGGClwZ2Kw';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				日本発の強いsaasビジネスを作るには Saasビジネスモデルを7年の経験から徹底解剖 Techcrunch Japan
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://i0.wp.com/img.logmi.jp/wp-content/uploads/2018/03/iRidge10.jpg" data-lightbox="roadtrip" data-title="アイリッジ 2q売上は前年同期比11 増 一方 年度をまたぐ長期案件の増加等で通期予想を下方修正 ログミーファイナンス">
+						<img class="card-img" src="https://i0.wp.com/img.logmi.jp/wp-content/uploads/2018/03/iRidge10.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtnkIMc0f9C3-BPobuLpzF9ISEnvWrk8rMuA';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				アイリッジ 2q売上は前年同期比11 増 一方 年度をまたぐ長期案件の増加等で通期予想を下方修正 ログミーファイナンス
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="http://www.prokeiri.com/establish/img/esta_33.jpg" data-lightbox="roadtrip" data-title="It会社設立支援 会計事務所">
+						<img class="card-img" src="http://www.prokeiri.com/establish/img/esta_33.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNMbTqMhf80X0lqDoTxVar6gE1WENOMIec5Q';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				It会社設立支援 会計事務所
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="/search?q=%E3%83%86%E3%83%B3%E3%83%97%E3%83%AC%E3%83%BC%E3%83%88+%E8%A3%BD%E9%80%A0+%E5%8E%9F%E4%BE%A1+%E8%A8%88%E7%AE%97+%E3%82%A8%E3%82%AF%E3%82%BB%E3%83%AB&amp;tbm=isch" data-lightbox="roadtrip" data-title="Https Encrypted Tbn0 Gstatic Com Images Q Tbn And9gcqmwbslerrmfpgg2nu3t0hvtqjkye0lvlsqsx8htgzlaklyg Dv Usqp Cau">
+						<img class="card-img" src="/search?q=%E3%83%86%E3%83%B3%E3%83%97%E3%83%AC%E3%83%BC%E3%83%88+%E8%A3%BD%E9%80%A0+%E5%8E%9F%E4%BE%A1+%E8%A8%88%E7%AE%97+%E3%82%A8%E3%82%AF%E3%82%BB%E3%83%AB&amp;tbm=isch" onerror="this.onerror=null;this.src='/search?q=%E3%83%86%E3%83%B3%E3%83%97%E3%83%AC%E3%83%BC%E3%83%88+%E8%A3%BD%E9%80%A0+%E5%8E%9F%E4%BE%A1+%E8%A8%88%E7%AE%97+%E3%82%A8%E3%82%AF%E3%82%BB%E3%83%AB&amp;tbm=isch';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Https Encrypted Tbn0 Gstatic Com Images Q Tbn And9gcqmwbslerrmfpgg2nu3t0hvtqjkye0lvlsqsx8htgzlaklyg Dv Usqp Cau
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://pbs.twimg.com/media/EXp0dPtU0AIOaHz.png" data-lightbox="roadtrip" data-title="ট ইট র 30分企業分析 にしけい 会計クイズ 解説 ブイキューブの売上原価明細書を見ると 製品製造原価 という項目があり こちらにオンプレミス型のソフトウェアが計上されています">
+						<img class="card-img" src="https://pbs.twimg.com/media/EXp0dPtU0AIOaHz.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNHxOr3qExxl5laVh3G93ARba-Ltqz8fQEYw';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				ট ইট র 30分企業分析 にしけい 会計クイズ 解説 ブイキューブの売上原価明細書を見ると 製品製造原価 という項目があり こちらにオンプレミス型のソフトウェアが計上されています
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://jp.techcrunch.com/wp-content/uploads/2019/09/image3.png" data-lightbox="roadtrip" data-title="日本発の強いsaasビジネスを作るには Saasビジネスモデルを7年の経験から徹底解剖 Techcrunch Japan">
+						<img class="card-img" src="https://jp.techcrunch.com/wp-content/uploads/2019/09/image3.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYfrJvoKSbOY_VsSnpNuPc0tKjF-fD2ZzAZQ';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				日本発の強いsaasビジネスを作るには Saasビジネスモデルを7年の経験から徹底解剖 Techcrunch Japan
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://pbs.twimg.com/media/EXp0afwU0AEaWTY.png" data-lightbox="roadtrip" data-title="30分企業分析 にしけい On Twitter 会計クイズ 解説 ブイキューブの売上原価明細書を見ると 製品製造原価 という項目があり こちらにオンプレミス型のソフトウェアが計上されています">
+						<img class="card-img" src="https://pbs.twimg.com/media/EXp0afwU0AEaWTY.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAl88eHynCyZXXmqL1OgY59fHPZqkYbzhFOQ';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				30分企業分析 にしけい On Twitter 会計クイズ 解説 ブイキューブの売上原価明細書を見ると 製品製造原価 という項目があり こちらにオンプレミス型のソフトウェアが計上されています
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://mag.leaner.jp/wp-content/uploads/2020/07/20200701.%E3%82%B3%E3%82%B9%E3%83%88%E6%A7%8B%E9%80%A08%E3%83%BC%E6%A5%BD%E5%A4%A9%EF%BC%85-1024x1006.png" data-lightbox="roadtrip" data-title="It企業 インターネット業界のコスト削減 販管費率や人件費率 費目別の削減アイデアを紹介 Leaner Magazine リーナーマガジン">
+						<img class="card-img" src="https://mag.leaner.jp/wp-content/uploads/2020/07/20200701.%E3%82%B3%E3%82%B9%E3%83%88%E6%A7%8B%E9%80%A08%E3%83%BC%E6%A5%BD%E5%A4%A9%EF%BC%85-1024x1006.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXFhJTigJqy8Zlvp06QEEW4xHjvvXyWy09FQ';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				It企業 インターネット業界のコスト削減 販管費率や人件費率 費目別の削減アイデアを紹介 Leaner Magazine リーナーマガジン
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://img.logmi.jp/article_images/8a5aTosFpYVDKWB7yjo1Zo.jpg" data-lightbox="roadtrip" data-title="マネーフォワード 3q累計売上高は前年比 61 と高成長継続 ログミーファイナンス">
+						<img class="card-img" src="https://img.logmi.jp/article_images/8a5aTosFpYVDKWB7yjo1Zo.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAFVhDXlsBK-A4z2-54xXUe9fwZd_fSMKZlQ';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				マネーフォワード 3q累計売上高は前年比 61 と高成長継続 ログミーファイナンス
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://www.oro.com/zac/blog/c4ba5292f284d1786f6564ec7f84d89214a93578.png" data-lightbox="roadtrip" data-title="プロジェクトごとの原価管理で黒字経営を実現 Zac Blog 企業の生産性向上を応援するブログ 株式会社オロ">
+						<img class="card-img" src="https://www.oro.com/zac/blog/c4ba5292f284d1786f6564ec7f84d89214a93578.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOBjuF0avmksmNXtYKa57kdQgy7ePWAJ1tMw';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				プロジェクトごとの原価管理で黒字経営を実現 Zac Blog 企業の生産性向上を応援するブログ 株式会社オロ
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://pca.jp/p-tips/upload/sw201202_img01_pc.jpg" data-lightbox="roadtrip" data-title="ソフトウェアの減価償却はどのように行う ポイントを解説 特集記事 P Tips ピー シー エー株式会社">
+						<img class="card-img" src="https://pca.jp/p-tips/upload/sw201202_img01_pc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5k6Z8xF-YcokwVgvtjhlVTE9JvMW6SkvTJA';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				ソフトウェアの減価償却はどのように行う ポイントを解説 特集記事 P Tips ピー シー エー株式会社
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://jp.techcrunch.com/wp-content/uploads/2019/09/image8.png" data-lightbox="roadtrip" data-title="日本発の強いsaasビジネスを作るには Saasビジネスモデルを7年の経験から徹底解剖 Techcrunch Japan">
+						<img class="card-img" src="https://jp.techcrunch.com/wp-content/uploads/2019/09/image8.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQdN44b2-V9f27ai7wzAr7qGQ7svrT3TjGsQ';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				日本発の強いsaasビジネスを作るには Saasビジネスモデルを7年の経験から徹底解剖 Techcrunch Japan
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+		
+	</div>
+
+		 
+		<div class="d-block mt-4 p-3">
+
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+		</div>
+		
+				</div>
+				<div class="col-sm-12 widget">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center py-4">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+					
+				</div>
+			</div>
+		</main>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+		
+		<!-- Footer CSS JS -->
+		
+		
+		
+			</body>
+</html>
